@@ -1,0 +1,268 @@
+/* FOR ENTIRE SITE */
+/* FOR ENTIRE SITE */
+body {
+    margin: 0;
+    background-color: #e6dec2;
+
+    /* background: url(ac-new-horizons-nook-pattern-1920x1080-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    
+}
+
+#container {
+    width: 900px;
+    margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #865920;
+}
+
+/* TOP BAR */
+/* TOP BAR */
+#bar {
+    display: block;
+    position: flex;
+
+    background-color: #f7f8df;
+    height: 50px;
+    width: 850px;
+    margin-left: 25px;
+}
+
+#barcircle1 {
+    display: block;
+    position: absolute;
+    background-color: #f7f8df;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    margin-left: -25px;
+}
+
+#barcircle2 {
+    display: block;
+    position: absolute;
+    background-color: #f7f8df;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    margin-left: 825px;
+}
+
+.checked {
+    color: #f5c810;
+    transform: scale(.1);
+
+    margin-left: 5px;
+    margin-top: 18px;
+
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#stitle {
+    position: absolute;
+    margin-top: -41px;
+    margin-left: 35px;
+}
+
+#container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+/* GYROID */
+/* GYROID */
+#boxone {
+    position: relative;
+    background-color: #f7f8df;
+    border-radius: 30px;
+    height: 600px;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#label {
+    position: absolute;
+    background-color: #cec396;
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;
+
+    margin-top: -20px;
+    margin-left: 50px;
+}
+
+#gyroidname {
+    position: absolute;
+    margin-left: 93px;
+    margin-top: -12px;
+}
+
+/* CUSTOMIZE */
+/* CUSTOMIZE */
+#boxtwo {
+    background-color: #f7f8df;
+    border-radius: 30px;
+    height: 600px;
+}
+
+#label2 {
+    position: absolute;
+    background-color: #cec396;
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;
+
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+#customize {
+    position: absolute;
+    margin-left: 99px;
+    margin-top: -12px;
+}
+
+#slideContainer {
+    width: 100%;
+    margin-top: 65px;
+    margin-left: 25px;
+}
+
+#slideContainer2,
+#slideContainer3,
+#slideContainer4,
+#slideContainer5,
+#slideContainer6 {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.slider1,
+.slider2,
+.slider3,
+.slider4,
+.slider5,
+.slider6 {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    width: 80%;
+    background: #cec396;
+    outline: none;
+}
+
+.slider1::-webkit-slider-thumb,
+.slider2::-webkit-slider-thumb,
+.slider3::-webkit-slider-thumb,
+.slider4::-webkit-slider-thumb,
+.slider5::-webkit-slider-thumb,
+.slider6::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #865920;
+    border-radius: 50%;
+}
+
+#sizeC,
+#armsC,
+#eyesC,
+#noseC,
+#question,
+#question2 {
+    margin-bottom: -1px;
+}
+
+/* GYROID ELEMENTS */
+/* GYROID ELEMENTS */
+#bodies {
+    position: absolute;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+
+    margin: auto;
+    margin-top: 17%;
+    margin-left: 24%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#bodyone {
+    display: block;
+    height: 400px;
+    width: 300px;
+    background-color: #865920;
+    border-radius: 25px;
+
+    margin: auto;
+}
+
+#bodytwo {
+    display: block;
+    height: 300px;
+    width: 300px;
+    background-color: #f5c810;
+    border-radius: 25px;
+
+    margin: auto;
+}
+
+#bodythree {
+    display: block;
+    height: 200px;
+    width: 300px;
+    background-color: #cec396;
+    border-radius: 25px;
+
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* #credits {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#credittext {
+    font-size: 12px;
+}*/
