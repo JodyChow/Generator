@@ -1,0 +1,828 @@
+/* FOR ENTIRE SITE */
+/* FOR ENTIRE SITE */
+body {
+    margin: 0;
+    background-color: #e6dec2;
+}
+
+#container {
+    width: 900px;
+    margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #865920;
+}
+
+li {
+    list-style: none;
+}
+
+/* TOP BAR */
+/* TOP BAR */
+#bar {
+    display: block;
+    position: flex;
+
+    background-color: #f7f8df;
+    height: 50px;
+    width: 850px;
+    margin-left: 25px;
+}
+
+#barcircle1 {
+    display: block;
+    position: absolute;
+    background-color: #f7f8df;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    margin-left: -25px;
+}
+
+#barcircle2 {
+    display: block;
+    position: absolute;
+    background-color: #f7f8df;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    margin-left: 825px;
+}
+
+.checked {
+    color: #f5c810;
+    transform: scale(.1);
+
+    margin-left: 5px;
+    margin-top: 18px;
+
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#stitle {
+    position: absolute;
+    margin-top: -41px;
+    margin-left: 35px;
+}
+
+#container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+#button {
+    -webkit-appearance: none;
+
+    margin-left: 770px;
+    margin-top: -22px;
+}
+
+/* GYROIDS */
+/* GYROIDS */
+#boxone {
+    position: relative;
+    background-color: #f7f8df;
+    border-radius: 30px;
+    height: 600px;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#label {
+    position: absolute;
+    background-color: #cec396;
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;
+
+    margin-top: -20px;
+    margin-left: 50px;
+}
+
+#gyroidname {
+    position: absolute;
+    margin-left: 89px;
+    margin-top: -12px;
+}
+
+/* CUSTOMIZE BOXES*/
+/* CUSTOMIZE BOXES*/
+#boxtwo {
+    background-color: #f7f8df;
+    border-radius: 30px;
+    height: 600px;
+}
+
+#label2 {
+    position: absolute;
+    background-color: #cec396;
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;
+
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+#customize {
+    position: absolute;
+    margin-left: 99px;
+    margin-top: -12px;
+}
+
+#slideContainer {
+    width: 100%;
+    margin-top: 65px;
+    margin-left: 25px;
+}
+
+#slideContainer2,
+#slideContainer3,
+#slideContainer4,
+#slideContainer5,
+#slideContainer6 {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.slider1,
+.slider2,
+.slider3,
+.slider4,
+.slider5,
+.slider6 {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    width: 80%;
+    background: #cec396;
+    outline: none;
+}
+
+.slider1::-webkit-slider-thumb,
+.slider2::-webkit-slider-thumb,
+.slider3::-webkit-slider-thumb,
+.slider4::-webkit-slider-thumb,
+.slider5::-webkit-slider-thumb,
+.slider6::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #865920;
+    border-radius: 50%;
+}
+
+#sizeC,
+#armsC,
+#eyesC,
+#noseC,
+#question,
+#question2 {
+    margin-bottom: -1px;
+}
+
+/* GYROID ELEMENTS */
+/* GYROID ELEMENTS */
+
+/* GYROID BODIES */
+/* GYROID BODIES */
+#bodies {
+    position: absolute;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+
+    margin: auto;
+    margin-top: 17%;
+    margin-left: 24%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#bodyone {
+    display: block;
+    height: 400px;
+    width: 300px;
+    background-color: #865920;
+
+    margin: auto;
+}
+
+#bodytwo {
+    display: block;
+    height: 350px;
+    width: 300px;
+    background-color: #865920;
+
+    margin: auto;
+}
+
+#bodythree {
+    display: block;
+    height: 300px;
+    width: 300px;
+    background-color: #865920;
+
+    margin: auto;
+}
+
+#bodyfour {
+    display: block;
+    height: 250px;
+    width: 300px;
+    background-color: #865920;
+
+    margin: auto;
+}
+
+#bodyfive {
+    display: block;
+    height: 200px;
+    width: 300px;
+    background-color: #865920;
+
+    margin: auto;
+}
+
+/* GYROID ARMS */
+/* GYROID ARMS */
+#arms {
+    position: absolute;
+    height: 150px;
+    width: 500px;
+
+    margin: auto;
+    margin-top: 39%;
+    margin-left: 6%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#armone,
+#armtwo,
+#armthree,
+#armfour,
+#armfive {
+    margin-bottom: 100px;
+}
+
+/* ARM ONE */
+/* ARM ONE */
+#arm-setone-one {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: 50px;
+    background-color: #865920;
+}
+
+#arm-setone-two {
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: -50px;
+    margin-left: 350px;
+
+    background-color: #865920;
+}
+
+/* ARM TWO */
+/* ARM TWO */
+#arm-settwo-one {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: 50px;
+    background-color: #865920;
+}
+
+#arm-settwo-two {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -75px;
+    margin-left: -25px;
+    background-color: #865920;
+}
+
+#arm-settwo-three {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: -25px;
+    margin-left: 350px;
+    background-color: #865920;
+}
+
+#arm-settwo-four {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -75px;
+    margin-left: 425px;
+    background-color: #865920;
+}
+
+/* ARM THREE */
+/* ARM THREE */
+#arm-setthree-one {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: 50px;
+    background-color: #865920;
+}
+
+#arm-setthree-two {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -25px;
+    margin-left: -25px;
+    background-color: #865920;
+}
+
+#arm-setthree-three {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: -75px;
+    margin-left: 350px;
+    background-color: #865920;
+}
+
+#arm-setthree-four {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -25px;
+    margin-left: 425px;
+    background-color: #865920;
+}
+
+/* ARM FOUR */
+/* ARM FOUR */
+#arm-setfour-one {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: 50px;
+    background-color: #865920;
+}
+
+#arm-setfour-two {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -75px;
+    margin-left: -25px;
+    background-color: #865920;
+}
+
+#arm-setfour-three {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: -25px;
+    margin-left: 350px;
+    background-color: #865920;
+}
+
+#arm-setfour-four {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -25px;
+    margin-left: 425px;
+    background-color: #865920;
+}
+
+/* ARM FIVE */
+/* ARM FIVE */
+#arm-setfive-one {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: 50px;
+    background-color: #865920;
+}
+
+#arm-setfive-two {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -25px;
+    margin-left: -25px;
+    background-color: #865920;
+}
+
+#arm-setfive-three {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+
+    margin-top: -75px;
+    margin-left: 350px;
+    background-color: #865920;
+}
+
+#arm-setfive-four {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+
+    margin-top: -75px;
+    margin-left: 425px;
+    background-color: #865920;
+}
+
+/* GYROID EYES */
+/* GYROID EYES */
+#eyes {
+    position: absolute;
+    overflow: hidden;
+    height: 60px;
+    width: 200px;
+
+    margin: auto;
+    margin-top: 30%;
+    margin-left: 33%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* EYES ONE */
+/* EYES ONE */
+#eye-one {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    background-color: black;
+}
+
+#eye-two {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    background-color: black;
+    margin-top: -60px;
+    margin-left: 140px;
+
+}
+
+/* EYES TWO */
+/* EYES TWO */
+#eye-three {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    background-color: black;
+}
+
+#eye-four {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    background-color: black;
+    margin-top: -60px;
+    margin-left: 140px;
+
+}
+
+#eye-five {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-color: #865920;
+    margin-top: -45px;
+    margin-left: 155px;
+
+}
+
+#eye-six {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-color: #865920;
+    margin-top: -30px;
+    margin-left: 15px;
+
+}
+
+/* EYES THREE */
+/* EYES THREE */
+#eye-seven {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-color: black;
+    margin-top: -45px;
+    margin-left: 155px;
+}
+
+#eye-eight {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-color: black;
+    margin-top: -30px;
+    margin-left: 15px;
+}
+
+/* EYES FOUR */
+/* EYES FOUR */
+#eye-nine {
+    display: block;
+    height: 20px;
+    width: 50px;
+    border-radius: 12px;
+
+    background-color: black;
+    margin-top: -85px;
+    margin-left: 150px;
+}
+
+#eye-ten {
+    display: block;
+    height: 20px;
+    width: 50px;
+    border-radius: 12px;
+
+    background-color: black;
+    margin-top: -20px;
+    margin-left: 0px;
+}
+
+/* EYES FIVE */
+/* EYES FIVE */
+#eye-el {
+    display: block;
+    height: 60px;
+    width: 20px;
+    border-radius: 12px;
+
+    background-color: black;
+    margin-left: 155px;
+}
+
+#eye-tw {
+    display: block;
+    height: 60px;
+    width: 20px;
+    border-radius: 12px;
+
+    background-color: black;
+    margin-top: -60px;
+    margin-left: 25px;
+}
+
+/* GYROID MOUTH */
+/* GYROID MOUTH */
+#mouths {
+    position: absolute;
+    overflow: hidden;
+    height: 60px;
+    width: 100px;
+
+    margin: auto;
+    margin-top: 38%;
+    margin-left: 42%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#mouthone {
+    display: block;
+    height: 20px;
+    width: 70px;
+    border-radius: 12px;
+
+    margin-left: 15px;
+    margin-top: 20px;
+
+    background-color: black;
+}
+
+#mouthtwo {
+    display: block;
+    height: 40px;
+    width: 50px;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    margin-left: 25px;
+    margin-top: 23px;
+
+    background-color: black;
+}
+
+#mouththree {
+    display: block;
+    height: 40px;
+    width: 50px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    margin-left: 25px;
+    margin-top: 21px;
+
+    background-color: black;
+}
+
+#mouthfour {
+    display: block;
+    height: 35px;
+    width: 35px;
+
+    border-radius: 50%;
+
+    margin-left: 33px;
+    margin-top: 20px;
+
+    background-color: black;
+}
+
+#mouthfive {
+    display: block;
+    height: 40px;
+    width: 50px;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    margin-left: 25px;
+    margin-top: 23px;
+
+    background-color: black;
+}
+
+#mouthsix {
+    display: block;
+    height: 25px;
+    width: 25px;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    margin-left: 38px;
+    margin-top: -41px;
+
+    background-color: #865920;
+}
+
+/* GYROID NOSE */
+/* GYROID NOSE */
+#noses {
+    position: absolute;
+    overflow: hidden;
+    height: 40px;
+    width: 60px;
+
+    margin: auto;
+    margin-top: 34%;
+    margin-left: 45.5%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#noseone {
+    display: block;
+    height: 15px;
+    width: 30px;
+
+    border-radius: 12px;
+
+    margin: auto;
+    margin-top: 13px;
+
+    background-color: black;
+}
+
+#nosetwo {
+    display: block;
+    height: 15px;
+    width: 30px;
+
+    border-radius: 12px;
+
+    margin: auto;
+    margin-top: 13px;
+
+    background-color: #865920; 
+}
+
+/* FOOTER */
+/* FOOTER */
+ #credits {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#credittext {
+    font-size: 12px;
+}
